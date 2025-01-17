@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Football Academy</title>
+  <!-- Add Font Awesome for Icons -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+  <!-- Navigation Bar -->
+  <nav class="navbar">
+    <div class="logo">
+      <a href="#">Football Academy</a>
+    </div>
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#training">Training</a></li>
+      <li><a href="#feedback">Feedback</a></li>
+      <li><a href="#about">About Us</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <button class="mode-toggle" id="modeToggle">🌙</button>
+  </nav>
+
+  <!-- Home Section -->
+  <section id="home" class="section home">
+    <div class="home-content">
+      <h1>Unlock Your Potential with Professional Football Training</h1>
+      <p>Transform your skills with expert coaching and a professional training environment.</p>
+      <a href="#training" class="cta-btn">Join Now</a>
+    </div>
+  </section>
+
+  <!-- Training Section -->
+  <section id="training" class="section training">
+    <h2>Our Training Programs</h2>
+    <p>Comprehensive programs designed for all skill levels, from beginners to professionals.</p>
+
+    <div class="training-schedule">
+      <table>
+        <thead>
+          <tr>
+            <th>Day</th>
+            <th>Time</th>
+            <th>Intensity</th>
+            <th>Focus</th>
+            <th>Icons</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Monday</td>
+            <td>6:00 PM - 8:00 PM</td>
+            <td>High</td>
+            <td>Fitness, Speed, Ball Control</td>
+            <td>
+              <i class="fas fa-dumbbell"></i>
+              <i class="fas fa-tachometer-alt"></i>
+              <i class="fas fa-futbol"></i>
+            </td>
+          </tr>
+          <tr>
+            <td>Wednesday</td>
+            <td>6:00 PM - 8:00 PM</td>
+            <td>Medium</td>
+            <td>Drills, Teamwork, Passing</td>
+            <td>
+              <i class="fas fa-people-arrows"></i>
+              <i class="fas fa-hand-paper"></i>
+            </td>
+          </tr>
+          <tr>
+            <td>Friday</td>
+            <td>6:00 PM - 8:00 PM</td>
+            <td>High</td>
+            <td>Match Simulation, Tactical Awareness</td>
+            <td>
+              <i class="fas fa-chalkboard-teacher"></i>
+              <i class="fas fa-users"></i>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <!-- Feedback Section -->
+  <section id="feedback" class="section feedback">
+    <h2>Customer Feedback</h2>
+    <div class="testimonials">
+      <!-- Testimonial 1 -->
+      <div class="testimonial">
+        <img src="path/to/photo1.jpg" alt="John Doe" class="customer-photo">
+        <p>"The training at this academy has completely transformed my game! The coaches are incredible."</p>
+        <h4>John Doe</h4>
+        <p>Professional Player</p>
+        <div class="rating">
+          <span class="star">★</span>
+          <span class="star">★</span>
+          <span class="star">★</span>
+          <span class="star">★</span>
+          <span class="star">☆</span>
+        </div>
+      </div>
+
+      <!-- Testimonial 2 -->
+      <div class="testimonial">
+        <img src="path/to/photo2.jpg" alt="Jane Smith" class="customer-photo">
+        <p>"I’ve seen massive improvement in my fitness and skills. Highly recommend!"</p>
+        <h4>Jane Smith</h4>
+        <p>Amateur Player</p>
+        <div class="rating">
+          <span class="star">★</span>
+          <span class="star">★</span>
+          <span class="star">★</span>
+          <span class="star">★</span>
+          <span class="star">★</span>
+        </div>
+      </div>
+
+      <!-- Testimonial 3 -->
+      <div class="testimonial">
+        <img src="path/to/photo3.jpg" alt="Mark Wilson" class="customer-photo">
+        <p>"Great experience! The sessions are intense but rewarding. Would definitely join again."</p>
+        <h4>Mark Wilson</h4>
+        <p>Enthusiast</p>
+        <div class="rating">
+          <span class="star">★</span>
+          <span class="star">★</span>
+          <span class="star">★</span>
+          <span class="star">☆</span>
+          <span class="star">☆</span>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- About Section -->
+  <section id="about" class="section about">
+    <h2>About Us</h2>
+    <p>We are a passionate team of coaches, focused on developing football talent at all levels. Our mission is to help you unlock your full potential through professional training and personalized coaching.</p>
+
+    <div class="about-info">
+      <!-- Coach 1 -->
+      <div class="coach-card">
+        <img src="path/to/coach1.jpg" alt="Coach 1" class="coach-photo">
+        <h3>John Smith</h3>
+        <p>Head Coach</p>
+        <p>With over 15 years of experience, John brings a wealth of knowledge in both coaching and playing professional football.</p>
+      </div>
+
+      <!-- Coach 2 -->
+      <div class="coach-card">
+        <img src="path/to/coach2.jpg" alt="Coach 2" class="coach-photo">
+        <h3>Sarah Johnson</h3>
+        <p>Fitness Coach</p>
+        <p>Sarah specializes in fitness training and mental toughness, helping athletes build strength and resilience on and off the field.</p>
+      </div>
+
+      <!-- Coach 3 -->
+      <div class="coach-card">
+        <img src="path/to/coach3.jpg" alt="Coach 3" class="coach-photo">
+        <h3>Michael Davis</h3>
+        <p>Technical Coach</p>
+        <p>Michael focuses on developing technical skills like ball control, dribbling, and passing, turning raw talent into refined skills.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="section contact">
+    <h2>Contact Us</h2>
+    <p>For inquiries or to get more information, reach out to us.</p>
+    <div class="contact-form">
+      <form>
+        <div class="form-group">
+          <input type="text" placeholder="Your Name" required>
+          <i class="fas fa-user"></i> <!-- Icon for name -->
+        </div>
+        <div class="form-group">
+          <input type="email" placeholder="Your Email" required>
+          <i class="fas fa-envelope"></i> <!-- Icon for email -->
+        </div>
+        <div class="form-group">
+          <textarea placeholder="Your Message" required></textarea>
+          <i class="fas fa-comment"></i> <!-- Icon for message -->
+        </div>
+        <button type="submit" class="send-btn">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <p>&copy; 2025 Football Academy. All Rights Reserved.</p>
+  </footer>
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Football Training Academy</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+
+    <style>
+      /* Enable smooth scrolling */
+      html {
+        scroll-behavior: smooth;
+      }
+    </style>
+  </head>
+
+</body>
+
+</html>
