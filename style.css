@@ -1,0 +1,1637 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body */
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+  transition: all 0.3s ease;
+}
+
+/* Dark Mode */
+body.dark-mode {
+  background-color: #121212;
+  color: #fff;
+}
+
+/* Navigation */
+.navbar {
+  position: sticky;
+  top: 0;
+  background-color: #2c3e50;
+  padding: 15px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1000;
+}
+.navbar .logo a {
+  color: #4d0000;
+  font-size: 1.6rem;
+  font-weight: 500;
+  text-decoration: none;
+}
+.navbar ul {
+  display: flex;
+  gap: 20px;
+}
+
+.navbar ul li a {
+  color: #ecf0f1;
+  font-size: 1.1rem;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.navbar ul li a:hover {
+  color: #3498db;
+}
+
+.mode-toggle {
+  background: none;
+  border: none;
+  color: #ecf0f1;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+/* Sections */
+.section {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+/* Home Section */
+.home {
+  background: linear-gradient(135deg, #2980b9, #2c3e50);
+  color: #fff;
+}
+
+.home h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.home p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+}
+
+.cta-btn {
+  padding: 12px 30px;
+  background-color: #3498db;
+  color: white;
+  text-decoration: none;
+  font-size: 1.1rem;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.cta-btn:hover {
+  background-color: #2980b9;
+}
+
+/* Training Section */
+.training {
+  background: #fff;
+  color: #333;
+  padding: 60px 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+body.dark-mode .training {
+  background-color: #121212;
+  color: #f4f4f4;
+}
+.training h2 {
+  font-size: 2.2rem;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+.training .training-table table {
+  width: 100%;
+  margin-top: 20px;
+  border-collapse: collapse;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+body.dark-mode .training .training-table th,
+body.dark-mode .training .training-table td {
+  color: #f4f4f4;
+  border: 1px solid #444;
+}
+
+body.dark-mode .training .training-table th {
+  background-color: #2c3e50;
+}
+
+body.dark-mode .training .training-table td {
+  background-color: #34495e;
+  padding: 15px;
+  font-size: 1rem;
+}
+
+body.dark-mode .training .training-table td:hover {
+  background-color: #16a085;
+}
+
+body .training .training-table th,
+body .training .training-table td {
+  color: #333;
+  border: 1px solid #ddd;
+}
+
+body .training .training-table th {
+  background-color: #3498db;
+}
+
+body .training .training-table td {
+  background-color: #f9f9f9;
+  padding: 15px;
+  font-size: 1rem;
+}
+
+body .training .training-table td:hover {
+  background-color: #ecf0f1;
+}
+.training .training-table th,
+.training .training-table td {
+  text-align: center;
+  padding: 15px;
+  border: 1px solid #ddd;
+  transition: all 0.3s ease;
+}
+
+.training .training-table th {
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.training .training-table td {
+  font-size: 1rem;
+}
+
+.training .training-table tr:hover {
+  background-color: #f2f2f2;
+  transition: background-color 0.3s ease;
+}
+.training table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+.training th,
+.training td {
+  padding: 15px;
+  text-align: center;
+}
+
+.training th {
+  background-color: #2c3e50;
+  color: #fff;
+}
+
+.training td {
+  background-color: #f9f9f9;
+}
+
+/* Icons */
+.training td i {
+  font-size: 1.5rem;
+  margin: 0 10px;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.training td i:hover {
+  transform: scale(1.2);
+  color: #3498db;
+}
+
+/* Feedback Section */
+.feedback {
+  background-color: #f9f9f9;
+}
+
+.testimonials {
+  display: flex;
+  justify-content: space-around;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.testimonial {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.testimonial:hover {
+  transform: translateY(-10px);
+}
+
+.testimonial p {
+  font-size: 1rem;
+  margin-bottom: 15px;
+}
+
+.testimonial h4 {
+  font-weight: 600;
+  font-size: 1.2rem;
+}
+
+.testimonial .customer-photo {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 15px;
+}
+
+.rating {
+  margin-top: 10px;
+}
+
+.star {
+  color: #f1c40f;
+  font-size: 1.2rem;
+  margin: 0 2px;
+}
+
+.star:hover {
+  cursor: pointer;
+}
+
+.star:not(:hover) {
+  color: #ddd;
+}
+
+/* Contact Section */
+.contact {
+  background-color: #f7f7f7; /* Light grey background for a modern feel */
+  padding: 60px 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.contact h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  font-weight: 600;
+  color: #333;
+}
+
+.contact p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+  color: #555;
+}
+
+.contact-form form {
+  max-width: 600px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Form Group */
+.form-group {
+  position: relative;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 14px 40px; /* Extra padding for icons */
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 1rem;
+  background-color: #fff;
+  transition: border 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  border-color: #3498db; /* Highlight the border on focus */
+  outline: none;
+}
+
+.form-group i {
+  position: absolute;
+  left: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 1.2rem;
+  color: #888;
+}
+
+/* Send Message Button */
+.send-btn {
+  padding: 15px 30px;
+  font-size: 1.1rem;
+  background-color: #3498db;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  width: 100%;
+  max-width: 250px; /* Limit width for larger screens */
+  margin: 0 auto;
+}
+
+.send-btn:hover {
+  background-color: #2980b9;
+  transform: scale(1.05);
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  .contact h2 {
+    font-size: 2rem;
+  }
+
+  .contact p {
+    font-size: 1rem;
+  }
+
+  .contact-form form {
+    gap: 15px;
+  }
+
+  .send-btn {
+    padding: 12px 25px;
+    font-size: 1rem;
+  }
+}
+
+/* Footer */
+.footer {
+  background-color: #2c3e50;
+  color: #ecf0f1;
+  padding: 20px;
+  text-align: center;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+/* About Section */
+.about {
+  background: linear-gradient(135deg, #2980b9, #8e44ad);
+  color: #fff;
+  padding: 60px 20px;
+  text-align: center;
+  border-radius: 10px;
+}
+
+.about h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+.about p {
+  font-size: 1.2rem;
+  margin-bottom: 40px;
+  line-height: 1.6;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.about-info {
+  display: flex;
+  justify-content: space-around;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.coach-card {
+  background-color: #fff;
+  color: #333;
+  border-radius: 10px;
+  padding: 20px;
+  width: 280px;
+  text-align: center;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.coach-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.coach-card .coach-photo {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 20px;
+}
+
+.coach-card h3 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.coach-card p {
+  font-size: 1rem;
+  margin-bottom: 10px;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  .about-info {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .coach-card {
+    width: 90%;
+    margin: 20px 0;
+  }
+}
+/* About Section */
+.about {
+  background: linear-gradient(135deg, #2980b9, #8e44ad);
+  color: #fff;
+  padding: 60px 20px;
+  text-align: center;
+  border-radius: 10px;
+}
+
+.about h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+.about p {
+  font-size: 1.2rem;
+  margin-bottom: 40px;
+  line-height: 1.6;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.about-info {
+  display: flex;
+  justify-content: space-around;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.coach-card {
+  background-color: #fff;
+  color: #333;
+  border-radius: 10px;
+  padding: 20px;
+  width: 280px;
+  text-align: center;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.coach-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.coach-card .coach-photo {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 20px;
+}
+
+.coach-card h3 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.coach-card p {
+  font-size: 1rem;
+  margin-bottom: 10px;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  .about-info {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .coach-card {
+    width: 90%;
+    margin: 20px 0;
+  }
+}
+/* General Button Styles */
+.cta-btn,
+.contact-form button {
+  padding: 14px 30px;
+  font-size: 1.2rem;
+  background-color: #3498db;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 8px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  display: inline-block;
+  text-align: center;
+}
+
+.cta-btn:hover,
+.contact-form button:hover {
+  background-color: #2980b9;
+  transform: scale(1.05);
+}
+
+/* Responsive Button for Small Screens */
+@media screen and (max-width: 768px) {
+  .cta-btn,
+  .contact-form button {
+    padding: 12px 25px;
+    font-size: 1rem;
+  }
+}
+/* General Button Styles */
+.cta-btn,
+.contact-form button {
+  padding: 14px 30px;
+  font-size: 1.2rem;
+  background-color: #3498db;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 8px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  display: inline-block;
+  text-align: center;
+}
+
+.cta-btn:hover,
+.contact-form button:hover {
+  background-color: #2980b9;
+  transform: scale(1.05);
+}
+
+/* Responsive Button for Small Screens */
+@media screen and (max-width: 768px) {
+  .cta-btn,
+  .contact-form button {
+    padding: 12px 25px;
+    font-size: 1rem;
+  }
+}
+
+/* Sections */
+.section {
+  padding: 60px 20px;
+  text-align: center;
+  transition: background-color 0.3s ease;
+}
+
+@media screen and (max-width: 768px) {
+  .section {
+    padding: 40px 15px;
+  }
+}
+/* General Dark Mode Styles */
+body.dark-mode {
+  background-color: #121212;
+  color: #fff;
+}
+
+body.dark-mode .navbar {
+  background-color: #2c3e50;
+}
+
+body.dark-mode .navbar ul li a {
+  color: #ecf0f1;
+}
+
+body.dark-mode .navbar .mode-toggle {
+  color: #ecf0f1;
+}
+
+body.dark-mode .home {
+  background: linear-gradient(135deg, #1c2833, #2c3e50);
+}
+
+body.dark-mode .cta-btn {
+  background-color: #3498db;
+  color: #fff;
+}
+
+body.dark-mode .training {
+  background-color: #2c3e50;
+  color: #fff;
+}
+
+body.dark-mode .feedback {
+  background-color: #1c2833;
+}
+
+body.dark-mode .send-btn {
+  background-color: #2980b9;
+}
+
+body.dark-mode .footer {
+  background-color: #2c3e50;
+  color: #fff;
+}
+
+/* Contact Section Dark Mode */
+body.dark-mode .contact {
+  background-color: #2c3e50;
+  color: #fff;
+}
+
+body.dark-mode .contact-form input,
+body.dark-mode .contact-form textarea {
+  background-color: #34495e;
+  border: 1px solid #555;
+  color: #fff;
+}
+
+body.dark-mode .contact-form input:focus,
+body.dark-mode .contact-form textarea:focus {
+  border-color: #3498db;
+}
+
+body.dark-mode .send-btn {
+  background-color: #2980b9;
+}
+
+body.dark-mode .send-btn:hover {
+  background-color: #3498db;
+}
+
+/* Light Mode Styles (default) */
+body {
+  background-color: #f7f7f7;
+  color: #333;
+}
+
+.navbar {
+  background-color: #fff;
+}
+
+.navbar ul li a {
+  color: #333;
+}
+
+.navbar .mode-toggle {
+  color: #333;
+}
+
+.home {
+  background: linear-gradient(135deg, #2980b9, #2c3e50);
+}
+
+.cta-btn {
+  background-color: #3498db;
+  color: #fff;
+}
+
+.training {
+  background-color: #fff;
+  color: #333;
+}
+
+.feedback {
+  background-color: #f9f9f9;
+}
+
+.send-btn {
+  background-color: #3498db;
+}
+
+.footer {
+  background-color: #fff;
+  color: #333;
+}
+
+/* Contact Section Light Mode */
+.contact {
+  background-color: #f7f7f7;
+  color: #333;
+}
+
+.contact-form input,
+.contact-form textarea {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  color: #333;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-color: #3498db;
+}
+
+.send-btn {
+  background-color: #3498db;
+}
+
+.send-btn:hover {
+  background-color: #2980b9;
+}
+/* General Dark Mode Styles */
+body.dark-mode {
+  background-color: #121212; /* Dark background for the page */
+  color: #e0e0e0; /* Light text color for readability */
+}
+
+body.dark-mode .navbar {
+  background-color: #1e2a36; /* Darker navbar background */
+}
+
+body.dark-mode .navbar ul li a {
+  color: #b0b0b0; /* Light grey for navbar links */
+}
+
+body.dark-mode .navbar .mode-toggle {
+  color: #b0b0b0; /* Light grey for mode toggle button */
+}
+
+body.dark-mode .home {
+  background: linear-gradient(
+    135deg,
+    #1a2637,
+    #2c3e50
+  ); /* Dark gradient for home section */
+}
+
+body.dark-mode .cta-btn {
+  background-color: #3498db; /* Button color in dark mode */
+  color: #fff; /* White text */
+}
+
+body.dark-mode .cta-btn:hover {
+  background-color: #2980b9; /* Darker blue on hover */
+}
+
+body.dark-mode .training {
+  background-color: #1e2a36; /* Dark background for the training section */
+  color: #fff; /* White text */
+}
+
+body.dark-mode .feedback {
+  background-color: #1e2a36; /* Dark background for the feedback section */
+  color: #fff; /* White text */
+}
+
+body.dark-mode .footer {
+  background-color: #1e2a36; /* Dark footer background */
+  color: #b0b0b0; /* Light text color */
+}
+
+/* Contact Section Dark Mode */
+body.dark-mode .contact {
+  background-color: #2c3e50; /* Dark background for contact */
+  color: #e0e0e0; /* Light text color */
+}
+
+body.dark-mode .contact-form input,
+body.dark-mode .contact-form textarea {
+  background-color: #34495e; /* Dark input and textarea backgrounds */
+  border: 1px solid #555; /* Dark border */
+  color: #fff; /* White text */
+}
+
+body.dark-mode .contact-form input:focus,
+body.dark-mode .contact-form textarea:focus {
+  border-color: #3498db; /* Blue border when focused */
+}
+
+body.dark-mode .send-btn {
+  background-color: #3498db; /* Button color in dark mode */
+  color: #fff; /* White text */
+}
+
+body.dark-mode .send-btn:hover {
+  background-color: #2980b9; /* Darker blue on hover */
+}
+
+/* Light Mode Styles (default) */
+body {
+  background-color: #fafafa; /* Light background for the page */
+  color: #333; /* Dark text color */
+}
+
+.navbar {
+  background-color: #fff; /* White navbar background */
+}
+
+.navbar ul li a {
+  color: #333; /* Dark text color for navbar links */
+}
+
+.navbar .mode-toggle {
+  color: #333; /* Dark text color for mode toggle button */
+}
+
+.home {
+  background: linear-gradient(
+    135deg,
+    #3498db,
+    #2980b9
+  ); /* Light gradient for home section */
+}
+
+.cta-btn {
+  background-color: #3498db; /* Button color in light mode */
+  color: #fff; /* White text */
+}
+
+.cta-btn:hover {
+  background-color: #2980b9; /* Darker blue on hover */
+}
+
+.training {
+  background-color: #fff; /* White background for the training section */
+  color: #333; /* Dark text color */
+}
+
+.feedback {
+  background-color: #f9f9f9; /* Light background for the feedback section */
+  color: #333; /* Dark text color */
+}
+
+.footer {
+  background-color: #fff; /* White footer background */
+  color: #333; /* Dark text color */
+}
+
+/* Contact Section Light Mode */
+body .contact {
+  background-color: #fff; /* Light background for contact section */
+  color: #333; /* Dark text color */
+}
+
+body .contact-form input,
+body .contact-form textarea {
+  background-color: #fff; /* White input and textarea backgrounds */
+  border: 1px solid #ddd; /* Light border */
+  color: #333; /* Dark text */
+}
+
+body .contact-form input:focus,
+body .contact-form textarea:focus {
+  border-color: #3498db; /* Blue border when focused */
+}
+
+body .send-btn {
+  background-color: #3498db; /* Button color in light mode */
+  color: #fff; /* White text */
+}
+
+body .send-btn:hover {
+  background-color: #2980b9; /* Darker blue on hover */
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  .navbar ul {
+    flex-direction: column;
+    gap: 15px;
+    text-align: center;
+  }
+
+  .home h1 {
+    font-size: 2rem;
+  }
+
+  .cta-btn {
+    font-size: 1rem;
+  }
+
+  .testimonials {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .testimonial {
+    width: 90%;
+    margin: 20px 0;
+  }
+}
+/* Training Section Table Styling */
+
+/* General Training Table */
+.training .training-table table {
+  width: 100%;
+  margin-top: 20px;
+  border-collapse: collapse;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Dark Mode Styles for Table */
+body.dark-mode .training .training-table {
+  background-color: #1e2a36; /* Dark background for table */
+}
+
+body.dark-mode .training .training-table th,
+body.dark-mode .training .training-table td {
+  color: #e0e0e0; /* Light text color for better contrast */
+  border: 1px solid #555; /* Dark border color */
+}
+
+body.dark-mode .training .training-table th {
+  background-color: #2c3e50; /* Dark header background */
+}
+
+body.dark-mode .training .training-table td {
+  background-color: #34495e; /* Darker row background */
+}
+
+/* Light Mode Styles for Table */
+body .training .training-table th,
+body .training .training-table td {
+  color: #333; /* Dark text color for better readability */
+  border: 1px solid #ddd; /* Light border color */
+}
+
+body .training .training-table th {
+  background-color: #3498db; /* Blue header background */
+  color: #fff; /* White text for header */
+}
+
+body .training .training-table td {
+  background-color: #f9f9f9; /* Light background for table rows */
+}
+
+body .training .training-table td:hover {
+  background-color: #ecf0f1; /* Hover effect on rows */
+}
+
+/* Responsive Design for Table */
+@media screen and (max-width: 768px) {
+  .training .training-table table {
+    font-size: 14px; /* Adjust table font size for mobile */
+  }
+  .training .training-table th,
+  .training .training-table td {
+    padding: 10px; /* Adjust padding for mobile view */
+  }
+}
+/* General Training Section */
+.training {
+  background-color: #fff;
+  color: #333;
+  padding: 60px 20px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+body.dark-mode .training {
+  background-color: #121212;
+  color: #f4f4f4;
+}
+
+/* Table Styling */
+.training .training-table table {
+  width: 100%;
+  margin-top: 20px;
+  border-collapse: collapse;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Dark Mode Table */
+body.dark-mode .training .training-table th,
+body.dark-mode .training .training-table td {
+  color: #f4f4f4; /* Light text color for dark mode */
+  border: 1px solid #444; /* Dark border */
+}
+
+body.dark-mode .training .training-table th {
+  background-color: #2c3e50; /* Dark header background */
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+body.dark-mode .training .training-table td {
+  background-color: #34495e; /* Darker row background */
+  text-align: center;
+  padding: 15px;
+  font-size: 1rem;
+}
+
+body.dark-mode .training .training-table td:hover {
+  background-color: #16a085; /* Hover effect */
+  transition: background-color 0.3s ease;
+}
+
+/* Light Mode Table */
+body .training .training-table th,
+body .training .training-table td {
+  color: #333; /* Dark text color */
+  border: 1px solid #ddd; /* Light border */
+}
+
+body .training .training-table th {
+  background-color: #3498db; /* Light blue header */
+  color: white;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+body .training .training-table td {
+  background-color: #f9f9f9; /* Light background for table rows */
+  text-align: center;
+  padding: 15px;
+  font-size: 1rem;
+}
+
+body .training .training-table td:hover {
+  background-color: #ecf0f1; /* Hover effect */
+  transition: background-color 0.3s ease;
+}
+
+/* Table Header and Row Hover Effects */
+.training .training-table th,
+.training .training-table td {
+  text-align: center;
+  padding: 15px;
+  border: 1px solid #ddd;
+  transition: all 0.3s ease;
+}
+
+.training .training-table th {
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.training .training-table td {
+  font-size: 1rem;
+}
+
+.training .training-table tr:hover {
+  background-color: #f2f2f2; /* Hover effect for rows */
+  transition: background-color 0.3s ease;
+}
+
+/* Responsive Design for Table */
+@media screen and (max-width: 768px) {
+  .training .training-table table {
+    font-size: 14px; /* Adjust table font size for mobile */
+  }
+  .training .training-table th,
+  .training .training-table td {
+    padding: 10px; /* Adjust padding for smaller screens */
+  }
+}
+/* About Section */
+.about {
+  background-color: rgba(
+    44,
+    62,
+    80,
+    0.9
+  ); /* Dark blue with slight transparency */
+  color: #fff;
+  padding: 60px 20px;
+  text-align: center;
+  border-radius: 10px;
+}
+/* About Section */
+.about {
+  background-image: url("path/to/your-image.jpg"); /* Add your image path here */
+  background-size: cover; /* Ensures the image covers the whole section */
+  background-position: center;
+  color: #fff;
+  padding: 60px 20px;
+  text-align: center;
+  border-radius: 10px;
+}
+/* About Section */
+.about {
+  background: linear-gradient(
+    135deg,
+    #f3f4f6,
+    #dcdfe1
+  ); /* Soft light gradient */
+  color: #333; /* Dark text for better contrast */
+  padding: 60px 20px;
+  text-align: center;
+  border-radius: 10px;
+}
+/* About Section */
+.about {
+  background: #121212; /* Dark background for a modern vibe */
+  color: #fff;
+  padding: 60px 20px;
+  text-align: center;
+  border-radius: 10px;
+}
+/* Training Section */
+.training {
+  padding: 60px 20px;
+  text-align: center;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.training h2 {
+  font-size: 2.2rem;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+/* Light Mode Styles */
+body:not(.dark-mode) .training {
+  background-color: #fff;
+  color: #333;
+}
+
+body:not(.dark-mode) .training .training-table th,
+body:not(.dark-mode) .training .training-table td {
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+body:not(.dark-mode) .training .training-table th {
+  background-color: #2c3e50;
+  color: #fff;
+}
+
+/* Dark Mode Styles */
+body.dark-mode .training {
+  background-color: #121212;
+  color: #ecf0f1;
+}
+
+body.dark-mode .training .training-table th,
+body.dark-mode .training .training-table td {
+  background-color: #333;
+  color: #ecf0f1;
+}
+
+body.dark-mode .training .training-table th {
+  background-color: #444;
+}
+
+body.dark-mode .training .training-table td {
+  background-color: #555;
+}
+
+/* Table Hover Effect */
+.training .training-table tr:hover {
+  background-color: #3498db;
+  color: #fff;
+}
+
+.training .training-table th,
+.training .training-table td {
+  padding: 15px;
+  text-align: center;
+  border: 1px solid #ddd;
+  transition: background-color 0.3s ease;
+}
+/* Training Section */
+.training {
+  background-color: #fff;
+  color: #333;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.training h2 {
+  font-size: 2.2rem;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+.training .training-table table {
+  width: 100%;
+  margin-top: 20px;
+  border-collapse: collapse;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.training .training-table th,
+.training .training-table td {
+  padding: 15px;
+  text-align: center;
+}
+
+.training .training-table th {
+  background-color: #2c3e50;
+  color: #fff;
+}
+
+.training .training-table td {
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+/* Dark Mode Styles for Training Section */
+body.dark-mode .training {
+  background-color: #121212;
+  color: #fff;
+}
+
+body.dark-mode .training .training-table th {
+  background-color: #34495e;
+  color: #fff;
+}
+
+body.dark-mode .training .training-table td {
+  background-color: #2c3e50;
+  color: #ecf0f1;
+}
+
+body.dark-mode .training h2 {
+  color: #ecf0f1;
+}
+/* Training Section */
+.training {
+  background-color: #ffffff;
+  color: #333;
+  padding: 60px 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  border-radius: 10px;
+}
+
+.training h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  font-weight: 600;
+  color: #2c3e50;
+}
+
+.training p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+  color: #7f8c8d;
+}
+
+.training .training-table {
+  width: 100%;
+  overflow-x: auto;
+}
+
+.training .training-table table {
+  width: 100%;
+  margin-top: 20px;
+  border-collapse: collapse;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  background-color: #f9f9f9;
+}
+
+.training .training-table th,
+.training .training-table td {
+  padding: 15px;
+  text-align: center;
+  font-size: 1rem;
+}
+
+.training .training-table th {
+  background-color: #3498db;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.training .training-table td {
+  background-color: #fff;
+  color: #333;
+  border-bottom: 1px solid #ddd;
+}
+
+.training .training-table td:hover {
+  background-color: #ecf0f1;
+  transition: background-color 0.3s ease;
+}
+/* Training Section */
+.training {
+  background-color: #fff;
+  color: #333;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease;
+}
+
+.training.dark-mode {
+  background-color: #121212;
+  color: #fff;
+}
+
+/* Training Table Styles */
+.training .training-table table {
+  width: 100%;
+  margin-top: 20px;
+  border-collapse: collapse;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease;
+}
+
+.training .training-table th,
+.training .training-table td {
+  padding: 15px;
+  text-align: center;
+  transition: background-color 0.3s ease;
+}
+
+.training .training-table th {
+  background-color: #2c3e50;
+  color: #fff;
+}
+
+.training .training-table td {
+  background-color: #f9f9f9;
+}
+
+.training.dark-mode .training-table th {
+  background-color: #333;
+  color: #fff;
+}
+
+.training.dark-mode .training-table td {
+  background-color: #444;
+}
+
+/* Logo in the Navbar */
+.navbar .logo a {
+  color: #ecf0f1;
+  font-size: 1.6rem;
+  font-weight: 500;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.navbar.dark-mode .logo a {
+  color: #fff;
+}
+
+/* Dark Mode Styles */
+body.dark-mode {
+  background-color: #121212;
+  color: #fff;
+}
+
+body.dark-mode .navbar {
+  background-color: #1a1a1a;
+}
+
+body.dark-mode .cta-btn {
+  background-color: #3498db;
+  color: #fff;
+}
+
+body.dark-mode .cta-btn:hover {
+  background-color: #2980b9;
+}
+
+body.dark-mode .footer {
+  background-color: #333;
+  color: #fff;
+}
+/* Training Section */
+.training {
+  background-color: #fff;
+  color: #333;
+  padding: 60px 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+body.dark-mode .training {
+  background-color: #121212;
+  color: #f4f4f4;
+}
+
+.training h2 {
+  font-size: 2.2rem;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+.training .training-table table {
+  width: 100%;
+  margin-top: 20px;
+  border-collapse: collapse;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+body.dark-mode .training .training-table th,
+body.dark-mode .training .training-table td {
+  color: #f4f4f4;
+  border: 1px solid #444;
+}
+
+body.dark-mode .training .training-table th {
+  background-color: #2c3e50;
+}
+
+body.dark-mode .training .training-table td {
+  background-color: #34495e;
+  padding: 15px;
+  font-size: 1rem;
+}
+
+body.dark-mode .training .training-table td:hover {
+  background-color: #16a085;
+}
+
+body .training .training-table th,
+body .training .training-table td {
+  color: #333;
+  border: 1px solid #ddd;
+}
+
+body .training .training-table th {
+  background-color: #3498db;
+}
+
+body .training .training-table td {
+  background-color: #f9f9f9;
+  padding: 15px;
+  font-size: 1rem;
+}
+
+body .training .training-table td:hover {
+  background-color: #ecf0f1;
+}
+
+.training .training-table th,
+.training .training-table td {
+  text-align: center;
+  padding: 15px;
+  border: 1px solid #ddd;
+  transition: all 0.3s ease;
+}
+
+.training .training-table th {
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.training .training-table td {
+  font-size: 1rem;
+}
+
+.training .training-table tr:hover {
+  background-color: #f2f2f2;
+  transition: background-color 0.3s ease;
+}
+/* Feedback Section */
+.feedback {
+  background-color: #f9f9f9;
+  padding: 60px 20px;
+}
+
+body.dark-mode .feedback {
+  background-color: #121212;
+}
+
+.testimonials {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.testimonial {
+  max-width: 300px;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.testimonial:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.testimonial i {
+  color: #3498db;
+}
+
+.testimonial h4 {
+  color: #777;
+  font-weight: 500;
+  margin-top: 10px;
+  font-size: 1rem;
+}
+
+.testimonial p {
+  color: #777;
+  font-size: 1rem;
+}
+/* Training Section */
+.training {
+  background-color: #fff;
+  color: #333;
+  padding: 60px 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+body.dark-mode .training {
+  background-color: #121212;
+  color: #f4f4f4;
+}
+
+.training h2 {
+  font-size: 2.2rem;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+.training .training-table table {
+  width: 100%;
+  margin-top: 20px;
+  border-collapse: collapse;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+body.dark-mode .training .training-table th,
+body.dark-mode .training .training-table td {
+  color: #f4f4f4;
+  border: 1px solid #444;
+}
+
+body.dark-mode .training .training-table th {
+  background-color: #2c3e50;
+}
+
+body.dark-mode .training .training-table td {
+  background-color: #34495e;
+  padding: 15px;
+  font-size: 1rem;
+}
+
+body.dark-mode .training .training-table td:hover {
+  background-color: #16a085;
+}
+
+body .training .training-table th,
+body .training .training-table td {
+  color: #333;
+  border: 1px solid #ddd;
+}
+
+body .training .training-table th {
+  background-color: #3498db;
+}
+
+body .training .training-table td {
+  background-color: #f9f9f9;
+  padding: 15px;
+  font-size: 1rem;
+}
+
+body .training .training-table td:hover {
+  background-color: #ecf0f1;
+}
+
+.training .training-table th,
+.training .training-table td {
+  text-align: center;
+  padding: 15px;
+  border: 1px solid #ddd;
+  transition: all 0.3s ease;
+}
+
+.training .training-table th {
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.training .training-table td {
+  font-size: 1rem;
+}
+
+.training .training-table tr:hover {
+  background-color: #f2f2f2;
+  transition: background-color 0.3s ease;
+}
